@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.svg">
+    <title>Last fm festival</title>
+</head>
+<body>
+  <h1 class="titulo">festival generator</h1>
+    <div class="botoes">
+        <button class="botao" id="s_01">1 semana</button>
+        <button class="botao" id="m_01">1 mês</button>
+        <button class="botao" id="m_03">3 meses</button>
+        <button class="botao" id="m_06">6 meses</button>
+        <button class="botao" id="a_01">1 ano</button>
+    </div>
+
+    <div class="espec">
+      <h3>Overall</h3>
+    </div>
+
+    <form id="form">
+        <input
+        autofocus
+          id="search"
+          type="text"
+          placeholder="Insira o nome do seu user"
+        />
+  
+        <button>Buscar</button>
+        <div class="textinho">
+          <p>Para gerar uma nova imagem atualize a página primeiro</p>
+        </div>
+    </form>
+
+    <div class="container">
+       <div class="popup"  id="example-img">
+         
+            <h1>last fm Festival</h1>
+            <h1 id="head-line"></h1>
+            <ul data-js="chart" class="chart" id="chart-container"></ul>
+         
+      </div>
+        
+    </div>
+
+<script type="text/javascript" src="lastfm.api.md5.js"></script>
+<script type="text/javascript" src="lastfm.api.js"></script>
+<script type="text/javascript" src="lastfm.api.cache.js"></script>
+<script type="text/javascript" src="json2.js"></script>
+<script type="text/javascript" src="html2canvas.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
